@@ -561,6 +561,7 @@ button {
     background: #fff;
     -webkit-transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
+    border-bottom: solid 5px #f0f0f0;
 }
 
 body.nav-opened .site-wrapper {
@@ -1011,6 +1012,21 @@ li.nav-blog.nav-current a {
     word-wrap: break-word;
 }
 
+#content > .post {
+    width: 28%;
+    max-width: 710px;
+    border-bottom: #EBF2F6 1px solid;
+    word-wrap: break-word;
+    display: inline-block;
+    box-shadow: 5px 5px 5px 5px #d7d4f0;
+    min-height: 296px;
+    padding: 14px;
+    margin: 20px 18px;
+    vertical-align: top;
+}
+#content article.post:hover {
+    background-color: rgba(0,0,0,0.2);
+}
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
 .post:after {
@@ -1039,6 +1055,9 @@ body.page-template .post-title {
 .post-title a {
     text-decoration: none;
 }
+h1.post-title:hover {
+    color: #CD35FB;
+}
 
 .post-excerpt p {
     margin: 0;
@@ -1057,12 +1076,13 @@ body.page-template .post-title {
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: #9EABB3;
+    margin-top: 25px;
 }
 
 .author-thumb {
     width: 24px;
     height: 24px;
-    float: left;
+   /* float: left;*/
     margin-right: 9px;
     border-radius: 100%;
 }
@@ -2292,4 +2312,37 @@ a {
 .post-content p > img {
     height: 528px !important;
     width: 644px;
+}
+section.post-excerpt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -moz-line-clamp: 3;
+    -moz-box-orient: vertical;
+}
+h2.post-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -moz-line-clamp: 1;
+    -moz-box-orient: vertical;
+    font-size: 25px !important;
+}
+@media only screen and (max-width: 768px)  {
+    #content{
+        padding: 0 10px;
+    }
+
+    #content > .post{
+        width: 96%;
+        margin: 13px 0px;
+        padding: 10px;
+        display: inline-block;
+        position: relative;
+    }
+    
 }
