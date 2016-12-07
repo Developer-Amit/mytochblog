@@ -62,7 +62,7 @@ config = {
         //         service: 'Gmail',
         //         auth: {
         //             user: 'ideamediaservices@gmail.com',
-        //             pass: 'Linkites123'
+        //             pass: '***********'
         //         }
         //     }
         // }
