@@ -2332,6 +2332,30 @@ h2.post-title {
     -moz-box-orient: vertical;
     font-size: 25px !important;
 }
+a.icon-twitter {
+    color: #5ba4e5 !important;
+}
+a.icon-facebook {
+    color: #3b5998 !important;
+}
+a.icon-google-plus {
+    color: #d34836 !important;
+}
+a.icon-whatsapp {
+    color: #34af23 !important;
+}
+.whatapp-myicon{
+    width: 20px;
+    position: relative;
+    top: 3px;
+}
+section.share {
+    margin-top: 15px;
+}
+section.share > a {
+    margin-right: 10px;
+}
+
 @media only screen and (max-width: 768px)  {
     #content{
         padding: 0 10px;

@@ -19,7 +19,7 @@ config = {
                 host: 'localhost',
                 user: 'root',
                 password: '',
-                database: 'ghost_testing',
+                database: 'mytoch-blog',
                 charset: 'utf8'
             },
             debug: true
