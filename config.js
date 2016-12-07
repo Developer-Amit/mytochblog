@@ -13,15 +13,23 @@ config = {
     production: {
         url: 'localhost:2368',
         mail: {},
+        //// Connectivity mysql////
         database: {
             client: 'mysql',
             connection: {
                 host: 'localhost',
                 user: 'root',
                 password: '',
-                database: 'mytoch-blog',
+                database: 'ghost_testing',
+                //database: 'mytoch_blog',
                 charset: 'utf8'
             },
+            //// Connectivity sqlite3////
+        // database:{
+        //     client: 'sqlite3',
+        //     connection: {
+        //         filename: path.join(__dirname, '/content/data/ghost2.db')
+        //     },
             debug: true
         },
 
@@ -62,7 +70,7 @@ config = {
         //         service: 'Gmail',
         //         auth: {
         //             user: 'ideamediaservices@gmail.com',
-        //             pass: '***********'
+        //             pass: 'Linkites123'
         //         }
         //     }
         // }
@@ -74,6 +82,7 @@ config = {
 
         // #### Database
         // Ghost supports sqlite3 (default), MySQL & PostgreSQL
+        //// Connectivity mysql////
        database: {
             client: 'mysql',
             connection: {
@@ -83,6 +92,12 @@ config = {
                 database: 'ghost_testing',
                 charset: 'utf8'
             },
+       //// Connectivity sqlite3////
+       // database:{
+       //      client: 'sqlite3',
+       //      connection: {
+       //          filename: path.join(__dirname, '/content/data/ghost2.db')
+       //      },
             debug: true
         },
         // #### Server
