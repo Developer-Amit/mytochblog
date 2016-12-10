@@ -2355,6 +2355,13 @@ section.share {
 section.share > a {
     margin-right: 10px;
 }
+#post-page-bg {
+   /* background-image: url("http://il6.picdn.net/shutterstock/videos/5468927/thumb/10.jpg");
+       background-color: #101010;
+   */
+
+}
+
 
 @media only screen and (max-width: 768px)  {
     #content{
